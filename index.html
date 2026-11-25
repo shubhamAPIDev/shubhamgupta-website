@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shubham Gupta — Developer & Freelancer</title>
+<meta name="description" content="Shubham Gupta — freelance developer building APIs, web apps, and automations.">
+<style>
+  :root {
+    --bg: #0d1117;
+    --surface: #161b22;
+    --border: #30363d;
+    --text: #e6edf3;
+    --muted: #8b949e;
+    --accent: #58a6ff;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  }
+  main { flex: 1; }
+  .container { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+
+  header.hero {
+    padding: 96px 0 48px;
+  }
+  .hero h1 {
+    font-size: 2.75rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+  }
+  .hero h1 span { color: var(--accent); }
+  .hero p.tagline {
+    font-size: 1.25rem;
+    color: var(--muted);
+    margin-top: 12px;
+    max-width: 34em;
+  }
+  .cta-row { margin-top: 28px; display: flex; gap: 12px; flex-wrap: wrap; }
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    border: 1px solid var(--border);
+    color: var(--text);
+    background: var(--surface);
+    transition: border-color .15s, transform .15s;
+  }
+  .btn:hover { border-color: var(--accent); transform: translateY(-1px); }
+  .btn.primary { background: var(--accent); color: #0d1117; border-color: var(--accent); }
+
+  section { padding: 40px 0; border-top: 1px solid var(--border); }
+  section h2 {
+    font-size: 1.4rem;
+    margin-bottom: 16px;
+    letter-spacing: -0.01em;
+  }
+  section p, section li { color: var(--muted); }
+
+  .cards { display: grid; gap: 16px; grid-template-columns: 1fr; }
+  @media (min-width: 600px) { .cards { grid-template-columns: 1fr 1fr; } }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    transition: border-color .15s;
+  }
+  .card:hover { border-color: var(--accent); }
+  .card h3 { font-size: 1.05rem; margin-bottom: 6px; }
+  .card p { font-size: 0.92rem; }
+
+  ul.plain { list-style: none; }
+  ul.plain li { padding: 6px 0; }
+  ul.plain li::before { content: "— "; color: var(--accent); }
+
+  footer {
+    border-top: 1px solid var(--border);
+    padding: 28px 0;
+    text-align: center;
+    color: var(--muted);
+    font-size: 0.85rem;
+  }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+<main>
+  <header class="hero">
+    <div class="container">
+      <h1>Shubham <span>Gupta</span></h1>
+      <p class="tagline">Freelance developer building APIs, web apps, and automations that save people time.</p>
+      <div class="cta-row">
+        <a class="btn primary" href="https://github.com/shubhamAPIDev">GitHub</a>
+        <a class="btn" href="mailto:hello@shubhamgupta.de">Get in touch</a>
+      </div>
+    </div>
+  </header>
+
+  <section>
+    <div class="container">
+      <h2>What I do</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>API Development</h3>
+          <p>Design and build reliable REST and GraphQL APIs — clean contracts, good docs, solid tests.</p>
+        </div>
+        <div class="card">
+          <h3>Web Apps</h3>
+          <p>Fast, practical web applications from idea to deployment, front end to back end.</p>
+        </div>
+        <div class="card">
+          <h3>Automation</h3>
+          <p>Scripts and integrations that remove repetitive work — CI/CD, bots, data pipelines.</p>
+        </div>
+        <div class="card">
+          <h3>Consulting</h3>
+          <p>Straight technical advice for founders and small teams. No jargon, no upselling.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>How I work</h2>
+      <ul class="plain">
+        <li>Small, fast iterations — you see progress every few days, not at the end.</li>
+        <li>Direct communication — one person to talk to, no account managers.</li>
+        <li>Honest estimates — if something isn't worth building, I'll tell you.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <h2>Contact</h2>
+      <p>The fastest way to reach me is email: <a href="mailto:hello@shubhamgupta.de">hello@shubhamgupta.de</a>.
+      You can also find my code on <a href="https://github.com/shubhamAPIDev">GitHub</a>.</p>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    &copy; 2026 Shubham Gupta · shubhamgupta.de
+  </div>
+</footer>
+</body>
+</html>
